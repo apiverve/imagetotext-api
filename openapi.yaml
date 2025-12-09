@@ -1,0 +1,85 @@
+openapi: 3.0.4
+info:
+  title: Image to Text
+  description: Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/imagetotext:
+    post:
+      summary: Extract Text
+      description: Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+      operationId: imagetotext
+      parameters: []
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  text: >-
+                    Ayear after that (in 2021) I hired somebody tpHfelp me write blog posts for
+
+                    my personal website.
+
+
+                    The point is, | like reinvesting the money | make
+
+                    back into my business.
+                  confidence: 88
+                  words: 28
+                  characters: 170
+                  lines: 5
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                url:
+                  type: string
+                  description: The URL of the image to extract text from
+                  example: https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
+              required:
+              - url
+              example:
+                url: https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
