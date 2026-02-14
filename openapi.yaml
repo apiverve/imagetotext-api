@@ -1,23 +1,25 @@
 openapi: 3.0.4
 info:
   title: Image to Text
-  description: Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+  description: >-
+    Image to Text is a simple tool for extracting text from images. It returns
+    the extracted text.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/imagetotext:
     post:
-      summary: Extract Text
-      description: Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+      summary: Extract Text from Image
+      description: Extract text from an uploaded image using OCR
       operationId: imagetotext
       parameters: []
       responses:
@@ -35,14 +37,15 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   text: >-
-                    Ayear after that (in 2021) I hired somebody tpHfelp me write blog posts for
+                    Ayear after that (in 2021) I hired somebody tpHfelp me write
+                    blog posts for
 
                     my personal website.
 
@@ -59,22 +62,26 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
       requestBody:
         required: true
         content:
-          application/json:
+          multipart/form-data:
             schema:
               type: object
               properties:
-                url:
+                image:
                   type: string
-                  description: The URL of the image to extract text from
-                  example: https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
+                  format: binary
+                  description: 'File to upload (accepted: .jpg, .jpeg, .png, .gif, max 5MB)'
+                  acceptedTypes:
+                    - .jpg
+                    - .jpeg
+                    - .png
+                    - .gif
+                  maxSizeMB: 5
               required:
-              - url
-              example:
-                url: https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
+                - image
 components:
   securitySchemes:
     api_key:
@@ -82,4 +89,7 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
+sampleRequest:
+  url: >-
+    https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
