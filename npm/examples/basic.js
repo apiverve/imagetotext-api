@@ -14,14 +14,14 @@ const api = new imagetotextAPI({
 });
 
 // Example query
-var query = {
-  "url": "https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png"
-};
+// This API requires a file upload
+// You can pass a file path, Buffer, or ReadStream
+var filePath = '/path/to/image.jpg';
 
 // Make the API request using callback
 console.log('Making request to Image to Text API...\n');
 
-api.execute(query, function (error, data) {
+api.executeWithFile(filePath, function (error, data) {
     if (error) {
         console.error('Error occurred:');
         if (error.error) {
