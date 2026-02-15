@@ -11,9 +11,9 @@ namespace APIVerve.API.ImagetoText
     public class ImagetoTextQueryOptions
     {
         /// <summary>
-        /// The URL of the image to extract text from
+        /// Upload an image file to extract text from (supported formats: JPG, PNG, GIF, max 5MB)
         /// </summary>
-        [JsonProperty("url")]
-        public string Url { get; set; }
+        [JsonProperty("image")]
+        public string Image { get; set; }
     }
 }
