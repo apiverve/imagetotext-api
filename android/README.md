@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:imagetotext-api:1.1.12'
+    implementation 'com.github.apiverve:imagetotext-api:1.1.13'
 }
 ```
 
@@ -47,7 +47,7 @@ ImagetoTextAPIClient client = new ImagetoTextAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("key", "value");
+    parameters.put("image", "");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
@@ -72,6 +72,25 @@ try {
 // Some APIs don't require parameters
 APIResponse response = client.execute();
 ```
+
+### File Upload
+
+This API requires a file upload. Supported file types: .jpg, .jpeg, .png, .gif (max 5MB)
+
+```java
+import java.io.File;
+
+// Upload an image file
+File imageFile = new File("/path/to/image.jpg");
+APIResponse response = client.executeWithFile(imageFile, "image");
+
+if (response.isSuccess()) {
+    JSONObject data = response.getData();
+    System.out.println("Success: " + data.toString());
+}
+```
+
+**Note:** File uploads use multipart/form-data encoding. Ensure your file size does not exceed 5MB.
 
 ---
 
@@ -135,7 +154,7 @@ For detailed API documentation, visit: [https://docs.apiverve.com/ref/imagetotex
 
 ## Get Your API Key
 
-Get your API key from [https://apiverve.com](https://apiverve.com)
+Get your API key from [https://apiverve.com](https://apiverve.com?utm_source=android&utm_medium=readme)
 
 ---
 
@@ -162,4 +181,4 @@ This SDK is released under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## About APIVerve
 
-[APIVerve](https://apiverve.com) provides production-ready REST APIs for developers. Fast, reliable, and easy to integrate.
+[APIVerve](https://apiverve.com?utm_source=android&utm_medium=readme) provides production-ready REST APIs for developers. Fast, reliable, and easy to integrate.
