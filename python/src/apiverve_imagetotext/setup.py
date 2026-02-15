@@ -10,20 +10,14 @@ if os.path.exists(requirements_file):
 
 setup(
     name='apiverve_imagetotext',
-    version='1.1.12',
+    version='1.1.13',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
     description='Image to Text is a simple tool for extracting text from images. It returns the extracted text.',
     author='APIVerve',
     author_email='hello@apiverve.com',
-    url='https://apiverve.com',
-    project_urls={
-        'Homepage': 'https://apiverve.com',
-        'Documentation': 'https://docs.apiverve.com/ref/imagetotext',
-        'Source': 'https://github.com/apiverve/imagetotext-api',
-        'Bug Tracker': 'https://github.com/apiverve/imagetotext-api/issues'
-    },
+    url='https://imagetotext.apiverve.com?utm_source=pypi&utm_medium=homepage',
     classifiers=[
         'Programming Language :: Python :: 3',
         'Operating System :: OS Independent',
