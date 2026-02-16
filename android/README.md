@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:imagetotext-api:1.1.13'
+    implementation 'com.github.apiverve:imagetotext-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ ImagetoTextAPIClient client = new ImagetoTextAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("image", "");
+    parameters.put("image", "example");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
