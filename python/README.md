@@ -226,9 +226,10 @@ from apiverve_imagetotext.apiClient import ImagetotextAPIClient
 
 api = ImagetotextAPIClient("[YOUR_API_KEY]")
 
-try:
-    # This API requires a file upload
+# This API requires a file upload
 files = { "image": open("/path/to/image.jpg", "rb") }
+
+try:
     result = api.execute(query)
     print(result)
 finally:
