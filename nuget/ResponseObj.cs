@@ -25,6 +25,9 @@ namespace APIVerve.API.ImagetoText
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -33,15 +36,27 @@ namespace APIVerve.API.ImagetoText
         public string Text { get; set; }
 
         [JsonProperty("confidence")]
-        public long Confidence { get; set; }
+        public long? Confidence { get; set; }
 
         [JsonProperty("words")]
-        public long Words { get; set; }
+        public long? Words { get; set; }
 
         [JsonProperty("characters")]
-        public long Characters { get; set; }
+        public long? Characters { get; set; }
 
         [JsonProperty("lines")]
-        public long Lines { get; set; }
+        public long? Lines { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
