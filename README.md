@@ -1,13 +1,13 @@
-# [Image to Text API](https://imagetotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Image to Text API](https://apiverve.com/marketplace/imagetotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+Image to Text is an OCR and image to text API that extracts text from image files or remote image URLs using optical character recognition. Upload a JPG, PNG, or GIF up to 5 MB to receive the raw extracted text.
 
 The Image to Text API provides a simple, reliable way to integrate image to text functionality into your applications. Built for developers who need production-ready image to text capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://imagetotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/imagetotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://imagetotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/imagetotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-POST-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -165,7 +165,7 @@ go get github.com/apiverve/imagetotext-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Image to Text API](https://imagetotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Image to Text API](https://apiverve.com/marketplace/imagetotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/imagetotext](https://docs.apiverve.com/ref/imagetotext)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -216,7 +216,6 @@ A real response from the Image to Text API:
   "error": null,
   "data": {
     "text": "Ayear after that (in 2021) I hired somebody tpHfelp me write blog posts for\nmy personal website.\n\nThe point is, | like reinvesting the money | make\nback into my business.",
-    "confidence": 88,
     "words": 28,
     "characters": 170,
     "lines": 5
@@ -228,7 +227,7 @@ A real response from the Image to Text API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Image to Text API](https://imagetotext.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Image to Text API](https://apiverve.com/marketplace/imagetotext?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

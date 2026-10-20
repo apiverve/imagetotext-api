@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: Image to Text
   description: >-
-    Image to Text is a simple tool for extracting text from images. It returns
-    the extracted text.
+    Image to Text is an OCR and image to text API that extracts text from image
+    files or remote image URLs using optical character recognition. Upload a
+    JPG, PNG, or GIF up to 5 MB to receive the raw extracted text.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/imagetotext:
     post:
-      summary: Extract Text from Image
+      summary: Image to Text
       description: Extract text from an uploaded image using OCR
       operationId: imagetotext
       parameters: []
@@ -53,7 +54,6 @@ paths:
                     The point is, | like reinvesting the money | make
 
                     back into my business.
-                  confidence: 88
                   words: 28
                   characters: 170
                   lines: 5
@@ -74,12 +74,12 @@ paths:
                   type: string
                   format: binary
                   description: 'File to upload (accepted: .jpg, .jpeg, .png, .gif, max 5MB)'
-                  acceptedTypes:
+                  x-acceptedTypes:
                     - .jpg
                     - .jpeg
                     - .png
                     - .gif
-                  maxSizeMB: 5
+                  x-maxSizeMB: 5
               required:
                 - image
 components:
@@ -91,5 +91,4 @@ components:
 security:
   - api_key: []
 sampleRequest:
-  url: >-
-    https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
+  url: https://findingtom.com/images/uploads/what-is-medium-com/article-image-15.png
