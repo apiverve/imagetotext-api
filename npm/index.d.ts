@@ -26,7 +26,6 @@ declare module '@apiverve/imagetotext' {
 
   interface ImagetoTextData {
       text:       null | string;
-      confidence: number | null;
       words:      number | null;
       characters: number | null;
       lines:      number | null;

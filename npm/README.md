@@ -1,13 +1,10 @@
 # Image to Text API
 
-Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+Image to Text is an OCR and image to text API that extracts text from image files or remote image URLs using optical character recognition. Upload a JPG, PNG, or GIF up to 5 MB to receive the raw extracted text.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 [![npm version](https://img.shields.io/npm/v/@apiverve/imagetotext.svg)](https://www.npmjs.com/package/@apiverve/imagetotext)
 
-This is a Javascript Wrapper for the [Image to Text API](https://imagetotext.apiverve.com?utm_source=npm&utm_medium=readme)
+This is a JavaScript wrapper for the [Image to Text API](https://apiverve.com/marketplace/imagetotext?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -28,15 +25,15 @@ yarn add @apiverve/imagetotext
 ## Configuration
 
 Before using the Image to Text API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=readme)
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=npm&utm_medium=referral&utm_content=readme)
 
 ---
 
 ## Quick Start
 
-[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=readme)
+[Get started with the Quick Start Guide](https://docs.apiverve.com/quickstart?utm_source=npm&utm_medium=referral&utm_content=readme)
 
-The Image to Text API documentation is found here: [https://docs.apiverve.com/ref/imagetotext](https://docs.apiverve.com/ref/imagetotext?utm_source=npm&utm_medium=readme).
+The Image to Text API documentation is found here: [https://docs.apiverve.com/ref/imagetotext](https://docs.apiverve.com/ref/imagetotext?utm_source=npm&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -135,7 +132,6 @@ var filePath = '/path/to/image.jpg';
   "error": null,
   "data": {
     "text": "Ayear after that (in 2021) I hired somebody tpHfelp me write blog posts for\nmy personal website.\n\nThe point is, | like reinvesting the money | make\nback into my business.",
-    "confidence": 88,
     "words": 28,
     "characters": 170,
     "lines": 5
@@ -147,7 +143,7 @@ var filePath = '/path/to/image.jpg';
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -159,12 +155,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=readme), [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=readme), and [Refund Policy](https://apiverve.com/refund?utm_source=npm&utm_medium=readme).
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=npm&utm_medium=referral&utm_content=readme) and [Privacy Policy](https://apiverve.com/privacy?utm_source=npm&utm_medium=referral&utm_content=readme).
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
