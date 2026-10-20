@@ -35,9 +35,6 @@ namespace APIVerve.API.ImagetoText
         [JsonProperty("text")]
         public string Text { get; set; }
 
-        [JsonProperty("confidence")]
-        public long? Confidence { get; set; }
-
         [JsonProperty("words")]
         public long? Words { get; set; }
 
