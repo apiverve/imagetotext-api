@@ -1,7 +1,7 @@
 {
     "name": "apiverve/imagetotext",
-    "description": "Image to Text is a simple tool for extracting text from images. It returns the extracted text.",
-    "version": "1.2.0",
+    "description": "Image to Text is an OCR and image to text API that extracts text from image files or remote image URLs using optical character recognition. Upload a JPG, PNG, or GIF up to 5 MB to receive the raw extracted text.",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -15,13 +15,13 @@
         "api",
         "apiverve",
         "imagetotext",
-        "image to text",
         "image to text api",
-        "image to text tool",
-        "image to text software",
-        "image to text service"
+        "ocr api",
+        "free image to text api",
+        "text recognition api",
+        "extract text from image api"
     ],
-    "homepage": "https://imagetotext.apiverve.com?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/imagetotext?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/imagetotext",
