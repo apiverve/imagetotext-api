@@ -1,6 +1,6 @@
 # Image to Text API - PHP Package
 
-Image to Text is a simple tool for extracting text from images. It returns the extracted text.
+Image to Text is an OCR and image to text API that extracts text from image files or remote image URLs using optical character recognition. Upload a JPG, PNG, or GIF up to 5 MB to receive the raw extracted text.
 
 ## Installation
 
@@ -79,7 +79,6 @@ $client = new Client(
   "error": null,
   "data": {
     "text": "Ayear after that (in 2021) I hired somebody tpHfelp me write blog posts for\nmy personal website.\n\nThe point is, | like reinvesting the money | make\nback into my business.",
-    "confidence": 88,
     "words": 28,
     "characters": 170,
     "lines": 5
@@ -94,11 +93,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/imagetotext?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/imagetotext?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://imagetotext.apiverve.com?utm_source=php&utm_medium=readme](https://imagetotext.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/imagetotext?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/imagetotext?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License

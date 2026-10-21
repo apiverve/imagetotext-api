@@ -19,7 +19,7 @@ use APIVerve\Imagetotext\Exceptions\ValidationException;
  * print_r($response);
  * ```
  *
- * @see https://imagetotext.apiverve.com?utm_source=php&utm_medium=readme
+ * @see https://apiverve.com/marketplace/imagetotext?utm_source=php&utm_medium=referral&utm_content=readme
  */
 class Client
 {
