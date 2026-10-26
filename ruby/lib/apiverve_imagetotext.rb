@@ -4,6 +4,6 @@ require_relative "apiverve_imagetotext/client"
 
 module APIVerve
   module Imagetotext
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
