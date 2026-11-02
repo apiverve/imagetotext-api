@@ -24,7 +24,8 @@ class ValidationError(ImagetotextAPIClientError):
 class ImagetotextAPIClient:
     # Validation rules for parameters (generated from schema)
     VALIDATION_RULES = {
-        "image": {"type": "string", "required": True}
+        "image": {"type": "string", "required": True},
+        "language": {"type": "string", "required": False}
     }
 
     # Format validation patterns
