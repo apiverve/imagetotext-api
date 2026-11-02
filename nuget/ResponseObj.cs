@@ -43,6 +43,42 @@ namespace APIVerve.API.ImagetoText
 
         [JsonProperty("lines")]
         public long? Lines { get; set; }
+
+        [JsonProperty("language")]
+        public string[] Language { get; set; }
+
+        [JsonProperty("confidence")]
+        public double? Confidence { get; set; }
+
+        [JsonProperty("wordBoxes")]
+        public WordBox[] WordBoxes { get; set; }
+    }
+
+    public partial class WordBox
+    {
+        [JsonProperty("text")]
+        public string Text { get; set; }
+
+        [JsonProperty("confidence")]
+        public double? Confidence { get; set; }
+
+        [JsonProperty("left")]
+        public long? Left { get; set; }
+
+        [JsonProperty("top")]
+        public long? Top { get; set; }
+
+        [JsonProperty("width")]
+        public long? Width { get; set; }
+
+        [JsonProperty("height")]
+        public long? Height { get; set; }
+
+        [JsonProperty("block")]
+        public long? Block { get; set; }
+
+        [JsonProperty("line")]
+        public long? Line { get; set; }
     }
 
     public partial class Premium

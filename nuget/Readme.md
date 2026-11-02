@@ -385,10 +385,56 @@ using (var apiClient = new ImagetoTextAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "text": "Ayear after that (in 2021) I hired somebody tpHfelp me write blog posts for\nmy personal website.\n\nThe point is, | like reinvesting the money | make\nback into my business.",
-    "words": 28,
-    "characters": 170,
-    "lines": 5
+    "text": "A year after that (in 2021) I hired somebody tp#lp me write blog posts for\nmy personal website.\n\nThe point is, | like reinvesting the money | make\nback into my business.",
+    "words": 32,
+    "characters": 169,
+    "lines": 5,
+    "language": [
+      "en"
+    ],
+    "confidence": 87.7,
+    "wordBoxes": [
+      {
+        "text": "after",
+        "confidence": 96.7,
+        "left": 76,
+        "top": 19,
+        "width": 35,
+        "height": 13,
+        "block": 1,
+        "line": 1
+      },
+      {
+        "text": "that",
+        "confidence": 96.9,
+        "left": 115,
+        "top": 19,
+        "width": 30,
+        "height": 12,
+        "block": 1,
+        "line": 1
+      },
+      {
+        "text": "tp#lp",
+        "confidence": 62.6,
+        "left": 357,
+        "top": 19,
+        "width": 49,
+        "height": 16,
+        "block": 1,
+        "line": 1
+      },
+      {
+        "text": "business.",
+        "confidence": 96.9,
+        "left": 174,
+        "top": 150,
+        "width": 99,
+        "height": 20,
+        "block": 3,
+        "line": 2
+      }
+    ]
   }
 }
 ```
