@@ -34,7 +34,8 @@ class Client
      * Validation rules for parameters
      */
     private const VALIDATION_RULES = [
-        'image' => ['type' => 'string', 'required' => true]
+        'image' => ['type' => 'string', 'required' => true],
+        'language' => ['type' => 'string', 'required' => false]
     ];
 
     /**
