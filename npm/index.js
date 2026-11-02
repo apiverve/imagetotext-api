@@ -30,7 +30,7 @@ class imagetotextWrapper {
         this.baseURL = 'https://api.apiverve.com/v1/imagetotext';
 
         // Validation rules for parameters (generated from schema)
-        this.validationRules = {"image":{"type":"string","required":true}};
+        this.validationRules = {"image":{"type":"string","required":true},"language":{"type":"string","required":false}};
     }
 
     /**

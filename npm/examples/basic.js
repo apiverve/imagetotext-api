@@ -21,7 +21,12 @@ var filePath = '/path/to/image.jpg';
 // Make the API request using callback
 console.log('Making request to Image to Text API...\n');
 
-api.executeWithFile(filePath, function (error, data) {
+api.executeWithFile(filePath,
+    {
+        fields: {
+        language: 'example'
+        }
+    }, function (error, data) {
     if (error) {
         console.error('Error occurred:');
         if (error.error) {

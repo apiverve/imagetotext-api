@@ -29,6 +29,20 @@ declare module '@apiverve/imagetotext' {
       words:      number | null;
       characters: number | null;
       lines:      number | null;
+      language:   (null | string)[];
+      confidence: number | null;
+      wordBoxes:  WordBox[];
+  }
+  
+  interface WordBox {
+      text:       null | string;
+      confidence: number | null;
+      left:       number | null;
+      top:        number | null;
+      width:      number | null;
+      height:     number | null;
+      block:      number | null;
+      line:       number | null;
   }
 
   export default class imagetotextWrapper {
