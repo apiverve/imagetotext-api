@@ -19,7 +19,7 @@ module APIVerve
       DEFAULT_TIMEOUT = 30
 
       # Validation rules for parameters
-      VALIDATION_RULES = { 'image' => { type: 'string', required: true } }
+      VALIDATION_RULES = { 'image' => { type: 'string', required: true }, 'language' => { type: 'string', required: false } }
 
       # Format validation patterns
       FORMAT_PATTERNS = {
