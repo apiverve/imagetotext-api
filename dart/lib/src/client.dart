@@ -48,10 +48,11 @@ final _formatPatterns = {
 
 /// Image to Text API client.
 ///
-/// For more information, visit: https://imagetotext.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/imagetotext?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [image] (required) - Upload an image file to extract text from (supported formats: JPG, PNG, GIF, max 5MB)
+/// * [language] - Language of the text, as ISO 639-1 codes; comma-separate several for mixed text (e.g. en,ja). Defaults to en
 class ImagetotextClient {
   final String apiKey;
   final String baseUrl;
@@ -60,6 +61,7 @@ class ImagetotextClient {
   /// Validation rules for parameters.
   static final Map<String, ValidationRule> _validationRules = <String, ValidationRule>{
     'image': ValidationRule(type: 'string', required: true),
+    'language': ValidationRule(type: 'string', required: false),
   };
 
   ImagetotextClient(this.apiKey, {
